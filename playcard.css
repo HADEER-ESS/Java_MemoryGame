@@ -1,0 +1,72 @@
+* , body , html {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Macondo" , sans-serif;
+}
+h1{
+    color: var(--basic-color);
+    text-align: center;
+}
+:root{
+    --button-color : #e87582;
+    --basic-color : #de2539 ;
+    --white-color : rgb(255,255,255);
+    --background-color : #8c757b;
+}
+.game-setting{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px ;
+}
+.btn-container{
+    display: flex;
+}
+.btn-container .btn{
+    color: var(--white-color);
+    background-color: var(--button-color);
+    margin-right: 30px;
+    margin-left: 0px ;
+    line-height: 30px ;
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 9px ;
+    width: 120px;
+    font-size: 20px ;
+}
+.btn-container .btn:active{
+    background-color: var(--basic-color);
+}
+.hint-lives{
+    display: flex;
+    margin-left: auto;
+    margin-right: 0px ;
+    width: 166.133px ;
+    height: 38.3833px;
+}
+.hint-lives img{
+    display: flex;
+    margin: 0px;
+    padding-left: 17px ;
+    width: 36.2167px;
+} 
+#card-holders{
+    border: 2px solid transparent;
+    border-radius: 7px ;
+    background-color: var(--background-color);
+    display: grid;
+    grid-template-columns: repeat(4 , 25%);
+    padding-top: 10px ;
+    padding-bottom: 10px ;
+} 
+#card-holders +img{
+    padding-top: 20px ;
+}
+#card-holders img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px ;
+    margin-top: 5px ;
+}
+
